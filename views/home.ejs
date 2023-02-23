@@ -1,0 +1,98 @@
+<%- include('header'); -%>
+
+<!-- ----- Home ----- -->
+<div>
+  <div class="homeimg">
+    <img class=" mx-auto d-block mt-5 me-5 cropimg" src="Images/Crop.png" alt="Crop.png">
+  </div>
+  <div class="hometext">
+    <h1>Agri Helper</h1>
+    <h4>Farming Help Assistant</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit beatae, est voluptatem alias similique voluptate
+      ab dignissimos hic adipisci veniam.</p>
+      <div class="button">
+        <a id="login" class="btn" href="/login">Login</a>
+        <a id="signup" class="btn" href="/signup">Signup</a>
+      </div>
+  </div>
+</div>
+<!-- ----- About ----- -->
+<div class="about">
+  <h2 class="title" id="abt">About Us</h2>
+  <div>
+    <img id="farmer" src="Images/farmphoto.png" alt="">
+  </div>
+  <div id="abt">
+    <p>Many farmers face problems because they are unaware about which fertilizer would be better for their soil based
+      on the crop. They don’t even find any good consultant who can give him scientifically proven ideas for better
+      farming. In case of any abnormal growth in crops they are unable to identify the cause. Rain prediction is also
+      one of the major problems in farming.
+      Our project is basically a web application for farmers. It works as a help assistant in the farming. It has some
+      great functionalities that will assist farmers to be more productive. It will provide a simple user-efficient web
+      platform where farmers can ask queries related to farming and anyone who knows the solution can respond to these
+      queries. It also assists farmers to use the best fertilizers based on the soil nutrients data provided by the
+      farmer. We will provide enough data on how and where they can do the soil testing as there are many government
+      laboratories who do this soil testing. On this platform we also provide 5-days rain prediction using API’s through
+      which farmers can get some help to plan their farming activities accordingly. One other important functionality of
+      our platform is plant health detection. If there is any abnormal growth seen in the crops then Farmers can take
+      and upload pictures of the crop and based on the model, we will detect the disease and then display the disease
+      name and provide some suggestions to cure it. We will also give information about the nearby fertilizer and seed
+      shops.
+    </p>
+  </div>
+</div>
+<!-- ----- Our Services ----- -->
+<div class="OurService">
+  <h2 class="title">Our Services</h2><br>
+  <div class="service">
+    <div class="serv">
+      <a href="http://127.0.0.1:5001">
+        <img src="Images/fertilizer.png" alt="">
+        <h5>Fertilizer Suggestion</h5>
+      </a>
+    </div>
+    <div class="serv">
+      <a href="/login">
+        <img src="Images/question.png" alt="">
+        <h5>Ask Your Queries</h5>
+      </a>
+    </div>
+    <div class="serv">
+      <a href="http://127.0.0.1:5002">
+        <img src="Images/plant.png" alt="">
+        <h5>Plant Health Check</h5>
+      </a>
+    </div>
+    <div class="serv">
+      <a href="http://127.0.0.1:5000">
+        <img src="Images/cloudy.png" alt="">
+        <h5>Crop Prediction</h5>
+      </a>
+    </div>
+    <div class="serv">
+      <a href="/shops">
+        <img src="Images/bag.png" alt="">
+        <h5>Nearby Fertilizer Shops</h5>
+      </a>
+    </div>
+    <div class="serv">
+      <a href="/elearning">
+        <img src="Images/elearning.png" alt="">
+        <h5>E-learning</h5>
+      </a>
+    </div><br>
+  </div>
+</div>
+<!-- ----- Contact Us ----- -->
+<div class="contact">
+  <h2 class="title">Contact Us</h2>
+  <form action="" method="post">
+    <label for="name">Your Name:</label>
+    <input class="input" type="text" name="name" id="name"><br>
+    <label for="msg">Your Message:</label>
+    <textarea class="input" name="message" id="msg" cols="30" rows="10"></textarea>
+    <button class="c-btn" type="submit">POST</button>
+  </form>
+</div>
+
+<%- include('footer'); -%>

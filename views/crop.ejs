@@ -1,0 +1,51 @@
+<%- include('header'); -%>
+
+<div class="body">
+    <h2>Crop Prediction</h2>
+    <p>Here, You can find the best Crop for your Soil.</p><hr><br>
+    <div class="form">
+        <form action="" name="cropform">
+            <div class="container">
+                <div class="item1">
+                    <label for="soil">Soil type</label><br>
+                    <select name="soil" id="soil">
+                        <option value="" selected disabled>Select the Soil type</option>
+                        <option value="Black">Black</option>
+                        <option value="Clayey">Clayey</option>
+                        <option value="Loamy">Loamy</option>
+                        <option value="Red">Red</option>
+                        <option value="Sandy">Sandy</option>
+                    </select>
+                </div>
+                <div class="item3">
+                    <label for="nit">Nitrogen</label><br>
+                    <input type="range" id="nit" min="10" max="70" value="40"
+                        oninput="rangeValue1.innerText = this.value">
+                    <p id="rangeValue1">40</p>
+                </div>
+                <div class="item4">
+                    <label for="php">Phosphorus</label><br>
+                    <input type="range" id="php" min="10" max="70" value="40"
+                        oninput="rangeValue2.innerText = this.value">
+                    <p id="rangeValue2">40</p>
+                </div>
+                <div class="item5">
+                    <label for="pot">Potassium</label><br>
+                    <input type="range" id="pot" min="10" max="70" value="40"
+                        oninput="rangeValue3.innerText = this.value">
+                    <p id="rangeValue3">40</p>
+                </div>
+                <div></div>
+                <div>
+                    <button type="submit">Find Crop</button>
+                </div>
+                <div class="result">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<%- include('footer'); -%>

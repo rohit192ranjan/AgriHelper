@@ -1,0 +1,31 @@
+/* Query Page CSS */
+body {
+    margin: 0;
+    background-color: #fff;
+}
+.navbar {
+    background: #a0e418;
+}
+.nav-link:hover {
+    color: #e5f9bd !important;
+}
+.nav-item {
+    padding: 0 10px;
+    color: #525050;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.body{
+    color: #525050;
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    padding: 20px 0;
+}
+footer {
+    clear: both;
+    background-color: #45630a;
+    color: #fff;
+    text-align: center;
+    padding: 1.5% 0 1% 0;
+}

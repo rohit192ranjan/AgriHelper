@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/signup.css">
+    <link rel="shortcut icon" href="/Favicon/AgriHelper favicon.png" type="image/x-icon">
+    <title>AgriHelper</title>
+</head>
+<body>
+    <section class="h-100 gradient-form" style="background-color: #eee;">
+        <div class="container py-5 h-200">
+          <div class="row d-flex justify-content-center align-items-center h-50">
+            <div class="col-xl-9">
+              <div class="card rounded-3 text-black">
+                <div class="row g-0">
+                  <div class="col-lg-6">
+                    <div class="card-body p-md-4 mx-md-4">
+                      <div class="text-center">
+                        <img src="/Images/AgriHelper Logo1.png"
+                          style="width: 185px;" alt="logo">
+                      </div>
+      
+                      <form action="/signup" method="post">
+                        <p>Create your account</p>
+                        <div class="form-outline mb-4">
+                            <input type="text" class="form-control" placeholder="Your Name" name="name"/>
+                          </div>
+          
+                          <div class="form-outline mb-4">
+                            <input type="email" class="form-control" placeholder="Your Email" name="email"/>
+                          </div>
+          
+                          <div class="form-outline mb-4">
+                            <input type="password" class="form-control" placeholder="Password" name="password" onkeyup='check();'/>
+                          </div>
+          
+                          <div class="form-outline mb-4">
+                            <input type="password" class="form-control" placeholder="Confirm Password" name="cpassword" onkeyup='check();'/>
+                            <span id='message'></span>
+                          </div>
+                          <div class="form-check d-flex justify-content-center mb-3">
+                            <input class="form-check-input me-2" type="checkbox" value="true" name="tc"/>
+                            <label class="form-check-label">
+                              I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                            </label>
+                          </div>
+      
+                        <div class="text-center pt-1 mb-2 pb-1 d-grid">
+                          <button class="btn btn-primary gradient-custom-2 mb-3 fw-semibold login" type="submit"  onclick='check();'>REGISTER</button>
+                        </div>
+      
+                        <div class="d-flex align-items-center justify-content-center pb-4">
+                          <p class="mb-0 me-2">Have already an account?</p>
+                          <button type="button" class="btn btn-outline-primary fw-semibold" onclick="window.location.href='/login'">Login Here</button>
+                        </div>
+      
+                      </form>
+      
+                    </div>
+                  </div>
+                  <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                    <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                      <h4 class="mb-4">Here, we're for farmers</h4>
+                      <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- *********************************************************************************************************************** -->
+    <!-- <section class="vh-100 bg-image"
+    style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="card" style="border-radius: 15px;">
+              <div class="card-body p-5">
+                <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+  
+                <form>
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example1cg" class="form-control form-control-lg" placeholder="Your Name" />
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form3Example3cg" class="form-control form-control-lg" placeholder="Your Email"/>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form3Example4cg" class="form-control form-control-lg" placeholder="Password"/>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form3Example4cdg" class="form-control form-control-lg" placeholder="Repeat your password"/>
+                  </div>
+  
+                  <div class="form-check d-flex justify-content-center mb-5">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                    <label class="form-check-label" for="form2Example3g">
+                      I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                    </label>
+                  </div>
+  
+                  <div class="d-flex justify-content-center">
+                    <button type="button"
+                      class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                  </div>
+  
+                  <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!"
+                      class="fw-bold text-body"><u>Login here</u></a></p>
+  
+                </form>
+  
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                    <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                      <h4 class="mb-4">Here, we're for farmers</h4>
+                      <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <script>
+    var check = function() {
+      if (document.getElementById('password').value ==
+        document.getElementById('cpassword').value) {
+        document.getElementById('message').style.color = 'green';
+        document.getElementById('message').innerHTML = 'matching';
+      } else {
+        document.getElementById('message').style.color = 'red';
+        document.getElementById('message').innerHTML = 'not matching';
+      }
+    }
+  </script>
+</body>
+</html>

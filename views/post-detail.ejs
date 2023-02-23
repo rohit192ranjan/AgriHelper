@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head', { title: 'Post title' }) %>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/forms.css" />
+    <link rel="stylesheet" href="/styles/posts.css" />
+  </head>
+
+  <body>
+    <%- include('includes/header') %>
+    <main id="post-detail">
+      <h3 id="question"><%= post.question %></h3>
+      <section id="post-meta">
+        <p><%=post.name%> | <time datetime="<%= post.date %>"><%= post.humanReadableDate %></time></p>
+      </section>
+      <section id="comments">
+        <% if (!comments) { %>
+        <!-- <p>
+          This post might have comments. You can load them if you want to view.
+        </p> -->
+        <form action="/posts/<%= post._id %>/comments" method="GET">
+          <button class="btn-c" id="">View Responses</button>
+        </form>
+        <% } else if (comments.length === 0) { %>
+          <p>No responses.</p>
+        <% } else { %>
+          <ol>
+            <% for (const comment of comments) { %>
+              <li>
+                <%- include('includes/comment-item', { comment: comment }) %>
+              </li>
+            <% } %>
+          </ol>
+        <% } %>
+      </section>
+      <section id="comments-form">
+        <h2>Add your response</h2>
+        <form action="/posts/<%= post._id %>/comments" method="POST">
+          <div class="form-control">
+            <label for="text">Your Name</label>
+            <input type="text" id="text" name="name" required />
+          </div>
+          <div class="form-control">
+            <label for="title">Response/Comment</label>
+            <textarea id="title" name="comment" rows="3" required></textarea>
+          </div>
+          <button class="btn">Post Response</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

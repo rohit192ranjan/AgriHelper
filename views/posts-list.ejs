@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('includes/head', { title: 'Query' }) %>
+  <link rel="stylesheet" href="/styles/posts.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+  <%- include('includes/header') %>
+  <main id="all-posts">
+    <div>
+      <h1 id="left-ask">All Queries</h1>
+      <a class="btn" id="right-ask" href="/new-post">Ask your query</a>
+    </div>
+    <% if (!posts || posts.length === 0) { %>
+      <p style="clear:both;">No queries found - Ask some queries !</p>
+
+    <% } else { %>
+      <ol id="posts-list">
+        <% for (const post of posts) { %>
+          <li>
+            <%- include('includes/post-item', { post: post }) %>
+          </li>
+        <% } %>
+      </ol>
+    <% } %>
+  </main>
+
+  <%- include('footer') %>

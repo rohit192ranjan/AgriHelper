@@ -1,0 +1,73 @@
+<%- include('header'); -%>
+
+    <div class="body">
+        <h2>Fertilizer Prediction</h2>
+        <p><b>Note:</b><br>
+            Based on Your Soil Testing, Enter the Percentage of Nutrients in your Soil. <br>
+            To do the Soil testing, You can go to your nearby soil testing laborateries.
+            <a href="https://farmer.gov.in/stl.aspx" target="_blank">see here</a>
+        </p>
+        <hr>
+        <div>
+            <form action="" name="soilform">
+                <div class="container">
+                    <div class="item1">
+                        <label for="crop">Crop</label><br>
+                        <select name="crop" id="crop">
+                            <option value="" selected disabled>Select Your Crop</option>
+                            <option value="Barley">Barley</option>
+                            <option value="Cotton">Cotton</option>
+                            <option value="Ground nuts">Ground nuts</option>
+                            <option value="Maize">Maize</option>
+                            <option value="Millets">Millets</option>
+                            <option value="Oil seeds">Oil seeds</option>
+                            <option value="Paddy">Paddy</option>
+                            <option value="Pulses">Pulses</option>
+                            <option value="Sugarcane">Sugarcane</option>
+                            <option value="Tobacco">Tobacco</option>
+                            <option value="Wheat">Wheat</option>
+                        </select>
+                    </div>
+                    <div class="item2">
+                        <label for="soil">Soil type</label><br>
+                        <select name="soil" id="soil">
+                            <option value="" selected disabled>Select the Soil type</option>
+                            <option value="Black">Black</option>
+                            <option value="Clayey">Clayey</option>
+                            <option value="Loamy">Loamy</option>
+                            <option value="Red">Red</option>
+                            <option value="Sandy">Sandy</option>
+                        </select>
+                    </div>
+                    <div class="item3">
+                        <label for="nit">Nitrogen</label><br>
+                        <input type="range" id="nit" min="10" max="70" value="40"
+                            oninput="rangeValue1.innerText = this.value">
+                        <p id="rangeValue1">40</p>
+                    </div>
+                    <div class="item4">
+                        <label for="php">Phosphorus</label><br>
+                        <input type="range" id="php" min="10" max="70" value="40"
+                            oninput="rangeValue2.innerText = this.value">
+                        <p id="rangeValue2">40</p>
+                    </div>
+                    <div class="item5">
+                        <label for="pot">Potassium</label><br>
+                        <input type="range" id="pot" min="10" max="70" value="40"
+                            oninput="rangeValue3.innerText = this.value">
+                        <p id="rangeValue3">40</p>
+                    </div>
+                    <div></div>
+                    <div>
+                        <button type="submit">Find Fertiizer</button>
+                    </div>
+                    <div class="result">
+                        <h2></h2>
+                        <p></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <%- include('footer'); -%>

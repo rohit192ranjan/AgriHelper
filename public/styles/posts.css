@@ -1,0 +1,148 @@
+/* All posts page */
+
+#left-ask{
+  float: left;
+}
+#right-ask{
+  float: right;
+}
+#all-posts {
+  text-align: center;
+  margin-top: 0;
+  min-height: 500px;
+}
+
+#posts-list {
+  width: 100%;
+  margin: 3rem auto;
+  padding-top: 3%;
+  clear: both;
+}
+
+#item{
+  height: 100px;
+}
+.post-item {
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 1rem 3rem;
+  background-color: rgb(220, 204, 252);
+}
+
+.post-item h2,
+.post-item p {
+  margin: 0.5rem 0;
+}
+
+.post-item-author {
+  font-style: italic;
+}
+
+.post-content{
+  float: left;
+  text-align: left;
+}
+
+.post-actions {
+  float: right;
+  margin-top: 30px;
+}
+
+.post-actions .btn-alt {
+  padding: 0;
+}
+
+/* Post detail page */
+
+#post-meta {
+  color: rgb(156, 149, 149);
+  font-size: 1rem;
+}
+
+#post-meta address {
+  display: inline;
+}
+
+#post-meta time {
+  font-style: italic;
+}
+
+#body {
+  white-space: pre-wrap; /* This ensures that line breaks and whitespace are kept */
+}
+
+#comments {
+  width: 100%;
+  margin: 2rem 0;
+  border-top: 2px solid rgb(204, 204, 204);
+  text-align: left;
+}
+
+#comments-form {
+  margin: 2rem  0;
+  max-width: 30rem;
+  padding: 2rem 1rem 1rem 3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+#comments-form h2 {
+  margin: 0 0 1rem 0;
+}
+
+#comments-form form {
+  margin: 2rem 0;
+  max-width: 25rem;
+}
+
+.comment-item {
+  margin: 1rem 0;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.comment-item p{
+  font-size: small;
+}
+
+.btn-vr {
+  cursor: pointer;
+  background-color: #525050;
+  border: 1px solid #525050;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+}
+
+.btn-vr:hover{
+  background-color: #a0e418;
+  border: 1px solid #a0e418;
+}
+
+.btn-vr a{
+  color:white !important; 
+}
+
+.btn-c {
+  margin-top: 2%;
+  cursor: pointer;
+  background-color: #525050;
+  color: white;
+  font-size: 1rem;
+  font-weight:600;
+  border: 1px solid #525050;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+}
+
+.btn-c:hover{
+  background-color: #a0e418;
+  border: 1px solid #a0e418;
+}
+
+/* Question */
+
+#question{
+  text-align: left;
+}
+/* Question */

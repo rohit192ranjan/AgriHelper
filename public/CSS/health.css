@@ -1,0 +1,57 @@
+/* Health Prediction Page CSS */
+body {
+    margin: 0;
+    background-color: #fff;
+}
+.navbar {
+    background: #a0e418;
+}
+.nav-link:hover {
+    color: #e5f9bd !important;
+}
+.nav-item {
+    padding: 0 10px;
+    color: #525050;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.body{
+    color: #525050;
+    width: 90%;
+    height: 480px;
+    margin: auto;
+    padding: 20px 0;
+}
+.container{
+    width: 70%;
+    margin-left: 0;
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: auto;
+}
+label{
+    font-weight: bold;
+}
+
+button{
+    color: #fff;
+    background-color: #6b980f;
+    padding: 1.5% 3%;
+    border-style: none;
+}
+
+footer {
+    clear: both;
+    background-color: #45630a;
+    color: #fff;
+    text-align: center;
+    padding: 1.5% 0 1% 0;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        width: 70%;
+        row-gap: 30px;
+    }
+}
+

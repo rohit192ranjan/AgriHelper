@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('includes/head', { title: 'Add new post' }) %>
+  <link rel="stylesheet" href="/styles/forms.css">
+</head>
+
+<body>
+  <%- include('includes/header') %>
+  <main>
+    <h1>Ask Your Question</h1>
+    <form id="form" action="/posts" method="POST">
+      <div class="form-control">
+        <label for="summary">Your Name</label>
+        <input type="text" id="summary" name="name" required maxlength="255">
+      </div>
+      <div class="form-control">
+        <label for="title">Your Question</label>
+        <textarea id="title" name="question" required rows="5"></textarea>
+      </div>
+      <button class="btn">Add Post</button>
+    </form>
+  </main>
+</body>
+
+</html>

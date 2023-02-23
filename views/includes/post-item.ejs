@@ -1,0 +1,18 @@
+<div class="post-item">
+  <div id="item">
+    <div class="post-content">
+      <h3><%= post.question %></h3>
+      <p><%= post.name %> | <time><%= post.date.toLocaleDateString('en-US', {
+           weekday: 'long',
+           year: 'numeric',
+           month: 'long',
+           day: 'numeric',
+         }); %></time></p>
+    </div>
+    <div class="post-actions">
+      <button class="btn-vr">
+        <a href="/posts/<%= post._id %>">View Responses</a>
+      </button>
+    </div>
+  </div>
+</div>

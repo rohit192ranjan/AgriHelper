@@ -1,0 +1,73 @@
+/* E-learning Page CSS */
+body {
+    margin: 0;
+    background-color: #fff;
+}
+.navbar {
+    background: #a0e418;
+}
+.nav-link:hover {
+    color: #e5f9bd !important;
+}
+.nav-item {
+    padding: 0 10px;
+    color: #525050;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.body{
+    color: #525050;
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    padding: 10px 0;
+}
+.op-item{
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 600;
+}
+#crop{
+    color: #a0e418;
+    font-size: larger;
+
+}
+a{
+    text-decoration: none;
+    color: #525050;
+}
+a:hover{
+    color: #a0e418;
+    font-size: larger;
+}
+.vid-gallery{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+}
+footer {
+    clear: both;
+    background-color: #45630a;
+    color: #fff;
+    text-align: center;
+    margin-top: 600px;
+    padding: 1.5% 0 1% 0;
+}
+
+@media screen and (max-width: 600px){
+    .vid-gallery{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        margin-top: 15px;
+    }
+    .op-item{
+        margin-right: 10px;
+        font-weight: 500;
+    }
+    footer {
+        margin-top: 900px;
+    }
+}
