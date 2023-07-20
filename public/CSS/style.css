@@ -14,7 +14,7 @@ body {
 }
 
 .navbar {
-    background: #a0e418;
+    background: linear-gradient(to right, #45630a, #a0e418);
 }
 
 .nav-link:hover {
@@ -35,11 +35,14 @@ body {
 }
 
 #login {
-    background-color: #ffcc1d;
+    background-color: #45630a;
+    color: #fff;
 }
 
 #login:hover {
     background-color: #e5f9bd;
+    border: 2px solid #45630a;
+    color: #45630a;
 }
 
 #signup {
@@ -48,7 +51,7 @@ body {
 
 #signup:hover {
     border: 1px solid;
-    color: black;
+    color: #45630a;;
 }
 
 .cropimg {
@@ -66,55 +69,35 @@ body {
     float: left;
     margin: 15% 0% 0% 10%;
 }
+
 .title{
     padding: 1% 0;
     color: #45630a;
 }
-.about {
-    clear: both;
-    /* background-color: #fff; */
-    background-color: #ebf3db;
-    width: 85%;
-    margin: 600px auto 50px;
-    padding: 3% 5%;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: rgba(41, 41, 46, 0.295) 0px 7px 29px 0px;
-}
 
-#farmer {
-    width: 40%;
-    height: auto;
-    float: right;
-    margin: 2%;
-}
-
-#abt {
-    text-align: justify;
-}
 .OurService {
+    clear: both;
     width: 100%;
     margin: 100px auto;
     padding: 3% 10%;
     text-align: center;
-    /* border-radius: 10px; */
     background-color: #ebf3db;
     box-shadow: rgba(41, 41, 46, 0.295) 0px 7px 29px 0px;
 }
 .OurService img{
-    width: 20%;
+    width: 10%;
     height: auto;
 }
 .service{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
     
 }
 .serv{
     color:#45630a;
     background-color: #fff;
-    padding: 10% 0;
+    padding: 10% 10%;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 .contact{
@@ -127,6 +110,7 @@ body {
 }
 .input{
     width: 100%;
+    margin-bottom: 10px;
 }
 .c-btn{
     color: #fff;

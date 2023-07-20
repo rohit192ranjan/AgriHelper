@@ -4,7 +4,7 @@ body {
     background-color: #fff;
 }
 .navbar {
-    background: #a0e418;
+    background: linear-gradient(to right, #45630a, #a0e418);
 }
 .nav-link:hover {
     color: #e5f9bd !important;

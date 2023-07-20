@@ -8,8 +8,8 @@ require("dotenv").config();
 const app  = express();
 const ObjectId = mongodb.ObjectId;
 
-mongoose.connect(process.env.mongodblink, {useNewUrlParser: true});
 //mongoose.connect("mongodb://localhost:27017/agrihelper", {useNewUrlParser: true});
+mongoose.connect(process.env.mongodblink, {useNewUrlParser: true});
 
 
 // Database structure for user details
@@ -19,7 +19,7 @@ const userSchema = {
     password: String
 };
 const User = new mongoose.model("User", userSchema);
-// Database structure for user details
+// ------------------------------------
 
 var result="non";
 
@@ -31,17 +31,14 @@ app.use(express.static("public"));
 app.get("/", function(req, res){
     res.render("home", {css : "style.css"});
 });
-app.get("/fertilizer", function(req, res){
-    res.render("fertilizer",{css : "fertilizer.css"});
+app.get("/about", function(req, res){
+  res.render("about", {css : "about.css"});
 });
 app.get("/health", function(req, res){
     res.render("health",{css : "health.css"});
 });
 app.get("/query", function(req, res){
     res.render("query",{css : "query.css"});
-});
-app.get("/crop", function(req, res){
-    res.render("crop",{css : "crop.css"});
 });
 app.get("/shops", function(req, res){
     res.render("shops",{css : "shops.css"});

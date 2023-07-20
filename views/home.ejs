@@ -17,12 +17,12 @@
   </div>
 </div>
 <!-- ----- About ----- -->
-<div class="about">
-  <h2 class="title" id="abt">About Us</h2>
+<!-- <div class="about">
+  <h2 class="title">About Us</h2>
   <div>
     <img id="farmer" src="Images/farmphoto.png" alt="">
   </div>
-  <div id="abt">
+  <div class="abt">
     <p>Many farmers face problems because they are unaware about which fertilizer would be better for their soil based
       on the crop. They don’t even find any good consultant who can give him scientifically proven ideas for better
       farming. In case of any abnormal growth in crops they are unable to identify the cause. Rain prediction is also
@@ -40,15 +40,15 @@
       shops.
     </p>
   </div>
-</div>
+</div> -->
 <!-- ----- Our Services ----- -->
 <div class="OurService">
   <h2 class="title">Our Services</h2><br>
   <div class="service">
     <div class="serv">
-      <a href="http://127.0.0.1:5001">
-        <img src="Images/fertilizer.png" alt="">
+      <a href="https://agripredicter.streamlit.app/" target="_blank">
         <h5>Fertilizer Suggestion</h5>
+        <img src="Images/fertilizer.png" alt="">
       </a>
     </div>
     <div class="serv">
@@ -58,15 +58,15 @@
       </a>
     </div>
     <div class="serv">
-      <a href="http://127.0.0.1:5002">
+      <a href="https://agripredicter.streamlit.app/" target="_blank">
         <img src="Images/plant.png" alt="">
-        <h5>Plant Health Check</h5>
+        <h5>Crop prediction</h5>
       </a>
     </div>
     <div class="serv">
-      <a href="http://127.0.0.1:5000">
+      <a href="http://127.0.0.1:5000" target="_blank">
         <img src="Images/cloudy.png" alt="">
-        <h5>Crop Prediction</h5>
+        <h5>Know Your weather</h5>
       </a>
     </div>
     <div class="serv">
@@ -86,12 +86,16 @@
 <!-- ----- Contact Us ----- -->
 <div class="contact">
   <h2 class="title">Contact Us</h2>
-  <form action="" method="post">
-    <label for="name">Your Name:</label>
+  <form action="https://formsubmit.co/surajprakashhh04@gmail.com" method="post">
+    <label for="name">Name:</label>
     <input class="input" type="text" name="name" id="name"><br>
+    <label for="subject">Subject:</label>
+    <input class="input" type="text" name="subject" id="subject"><br>
     <label for="msg">Your Message:</label>
     <textarea class="input" name="message" id="msg" cols="30" rows="10"></textarea>
-    <button class="c-btn" type="submit">POST</button>
+    <button class="c-btn" type="submit">SUBMIT</button>
+    <input type="hidden" name="_subject" value="New submission!">
+    <input type="hidden" name="_captcha" value="false">
   </form>
 </div>
 
