@@ -29,34 +29,25 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static("public"));
 
 app.get("/", function(req, res){
-    res.render("home", {css : "style.css"});
+    res.render("home", {css : "style.css", fcss : "fcss.css"});
 });
 app.get("/about", function(req, res){
-  res.render("about", {css : "about.css"});
-});
-app.get("/health", function(req, res){
-    res.render("health",{css : "health.css"});
-});
-app.get("/query", function(req, res){
-    res.render("query",{css : "query.css"});
-});
-app.get("/shops", function(req, res){
-    res.render("shops",{css : "shops.css"});
+  res.render("about", {css : "about.css", fcss : "fcss.css"});
 });
 app.get("/elearning", function(req, res){
-    res.render("elearning",{css : "elearning.css"});
+    res.render("elearning",{css : "elearning.css", fcss : "fcss.css"});
 });
 app.get("/elearning2", function(req, res){
-    res.render("elearning2",{css : "elearning2.css"});
+    res.render("elearning2",{css : "elearning2.css", fcss : "fcss.css"});
 });
 app.get("/elearning3", function(req, res){
-    res.render("elearning3",{css : "elearning3.css"});
+    res.render("elearning3",{css : "elearning3.css", fcss : "fcss.css"});
 });
 app.get("/elearning4", function(req, res){
-    res.render("elearning4",{css : "elearning4.css"});
+    res.render("elearning4",{css : "elearning4.css", fcss : "fcss.css"});
 });
 app.get("/elearning5", function(req, res){
-    res.render("elearning5",{css : "elearning5.css"});
+    res.render("elearning5",{css : "elearning5.css", fcss : "fcss.css"});
 });
 app.get("/login", function(req, res){
     res.render("login",{result:"result"});

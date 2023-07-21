@@ -2,9 +2,11 @@
 
 #left-ask{
   float: left;
+  margin-top: 25px;
 }
 #right-ask{
   float: right;
+  
 }
 #all-posts {
   text-align: center;
@@ -27,7 +29,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   padding: 1rem 3rem;
-  background-color: rgb(220, 204, 252);
+  background-color: #ebf3db;
 }
 
 .post-item h2,
@@ -42,6 +44,12 @@
 .post-content{
   float: left;
   text-align: left;
+  margin-top: 15px;
+}
+
+.post-content h3 {
+  font-size: larger;
+
 }
 
 .post-actions {
@@ -138,6 +146,23 @@
 .btn-c:hover{
   background-color: #a0e418;
   border: 1px solid #a0e418;
+}
+
+.btn.btn-primary {
+  height: 3rem;
+  line-height: 2.5rem;
+  padding: 0 2rem;
+  border: 0;
+  border-radius: 0.2rem;
+  background-image: linear-gradient(131deg, #93d116, #587d0e, #4b6b0a, #45630a);
+  background-size: 300% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover:enabled {
+  box-shadow: 0 0.5em 0.5em -0.4em #334807;
+  background-size: 100% 100%;
+  transform: translateY(-0.15em);
 }
 
 /* Question */
