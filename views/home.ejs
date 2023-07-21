@@ -1,146 +1,151 @@
-<!-- ---Home--- -->
-<div class="sec1">
-    <div class="homeimg">
-        <img class=" mx-auto d-block mt-5 me-5 cropimg" src="Images/Crop.png" alt="Crop.png">
-    </div>
-    <div class="hometext">
-        <h1>Agri Helper</h1>
-        <h4>Farming Help Assistant</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit beatae, est voluptatem alias similique
-            voluptate
-            ab dignissimos hic adipisci veniam.</p>
-        <div class="button">
-            <a id="login" class="btn" href="/login">Login</a>
-            <a id="signup" class="btn" href="/signup">Signup</a>
+<%- include('header'); -%>
+    <script src="https://kit.fontawesome.com/3417eee6ab.js" crossorigin="anonymous"></script>
+    <!-- ---Home--- -->
+    <div class="sec1">
+        <div class="homeimg">
+            <img class=" mx-auto d-block mt-5 me-5 cropimg" src="Images/Crop.png" alt="Crop.png">
+        </div>
+        <div class="hometext">
+            <h1>Agri Helper</h1>
+            <h4>Farming Help Assistant</h4>
+            <p>AgriHelper is a farming assistant application, providing solutions for agricultural challenges. From
+                personalized fertilizer recommendations to crop suggestion and proper guidance from the query
+                discussion, we aim to boost productivity and sustainability.</p>
         </div>
     </div>
-</div>
-<!-- ---Home--- -->
+    <!-- ---Home--- -->
 
-<!-- ---Our Services--- -->
-<div class="wrapper">
-    <h2>Our Services</h2>
-    <div class="line">
-    </div>
-    <div class="cards">
-        <a href="https://agripredicter.streamlit.app/" class="link-wrapper single-service">
-            <div class="social">
-                <i class="fa fa-seedling"></i>
-            </div>
-            <span></span>
-            <h3>Crop<br>Prediction</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et delectus, in veritatis veniam non
-                praesentium
-                corporis dolorum necessitatibus. Culpa odio enim amet praesentium illo voluptates ab quidem, nam
-                consequuntur.
-                Natus.</p>
-        </a>
-        <a href="https://agripredicter.streamlit.app/" class="link-wrapper single-service">
-            <div class="social">
-                <i class="fa-solid fa-fill-drip"></i>
-            </div>
-            <span></span>
-            <h3>Fertilizer<br>Prediction</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et delectus, in veritatis veniam non
-                praesentium
-                corporis dolorum necessitatibus. Culpa odio enim amet praesentium illo voluptates ab quidem, nam
-                consequuntur.
-                Natus.</p>
-        </a>
-        <a href="https://agripredicter.streamlit.app/" class="link-wrapper single-service">
-            <div class="social">
-                <i class="fa-solid fa-cloud-sun-rain"></i>
-            </div>
-            <span></span>
-            <h3>Weather<br>Prediction</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et delectus, in veritatis veniam non
-                praesentium
-                corporis dolorum necessitatibus. Culpa odio enim amet praesentium illo voluptates ab quidem, nam
-                consequuntur.
-                Natus.</p>
-        </a>
-        <div class="secrowcard">
-            <a href="\login" class="link-wrapper single-service">
+    <!-- ---Our Services--- -->
+    <div class="wrapper">
+        <h2>Our Services</h2>
+        <div class="line">
+        </div>
+        <div class="cards">
+            <a href="https://agripredicter.streamlit.app/" class="link-wrapper single-service firstrowservice">
                 <div class="social">
-                    <i class="fa fa-comments"></i>
+                    <i class="fa fa-seedling"></i>
                 </div>
                 <span></span>
-                <h3>Query</h3>
+                <h3>Crop<br>Prediction</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et delectus, in veritatis veniam non
-                    praesentium
-                    corporis dolorum necessitatibus. Culpa odio enim amet praesentium illo voluptates ab quidem, nam
-                    consequuntur.
-                    Natus.</p>
+                    Crop Prediction service helps farmers to make the most of their land. By inputting soil or
+                    weather-related data, our ML algorithm forecasts the ideal crops for their specific environment,
+                    enabling them to plan their agricultural endeavors with confidence and achieve optimal yields.</p>
             </a>
-            <a href="/elearning" class="link-wrapper single-service">
+            <a href="https://agripredicter.streamlit.app/" class="link-wrapper single-service firstrowservice">
                 <div class="social">
-                    <i class="fa-solid fa-chalkboard"></i>
+                    <i class="fa-solid fa-fill-drip"></i>
                 </div>
                 <span></span>
-                <h3>E-Learning</h3>
+                <h3>Fertilizer<br>Prediction</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et delectus, in veritatis veniam non
-                    praesentium
-                    corporis dolorum necessitatibus. Culpa odio enim amet praesentium illo voluptates ab quidem, nam
-                    consequuntur.
-                    Natus.</p>
+                    Fertilizer Prediction service empowers farmers to make informed decisions for their crops. By simply
+                    entering crop or soil-related data, our ML algorithm accurately predicts the best-suited fertilizer,
+                    optimizing yields and promoting sustainable farming practices.</p>
             </a>
-        </div>
-    </div>
-</div>
-<!-- ---Our Services--- -->
-
-
-<!-- ----- Contact Us ----- -->
-<div class="container">
-    <div class="row">
-        <!-- SVG -->
-        <div class="col-lg-6 m-4">
-            <%- include('svg'); -%>
-        </div>
-        <!-- Form -->
-        <div class="col-lg-6">
-            <div class="form">
-                <form action="https://formsubmit.co/surajprakashhh04@gmail.com" method="post">
-                    <h1 class="title text-center mb-4">Contact Us</h1>
-                    <!-- Name -->
-                    <div class="form-group position-relative">
-                        <label for="formName" class="d-block">
-                            <i class="icon" data-feather="user"></i>
-                        </label>
-                        <input type="text" id="formName" class="form-control form-control-lg thick mb-3" placeholder="Name">
+            <a href="https://know-your-weather-l0ct.onrender.com/" class="link-wrapper single-service firstrowservice">
+                <div class="social">
+                    <i class="fa-solid fa-cloud-sun-rain"></i>
+                </div>
+                <span></span>
+                <h3>Weather<br>Prediction</h3>
+                <p>
+                    Check Weather service is a valuable tool for farmers to stay informed about crucial weather
+                    conditions. With real-time updates on temperature, humidity, and wind, they can make well-informed
+                    decisions for their crops, ensuring timely interventions and safeguarding their
+                    agricultural investments.</p>
+            </a>
+            <div class="secrowcard">
+                <a href="\login" class="link-wrapper single-service">
+                    <div class="social">
+                        <i class="fa fa-comments"></i>
                     </div>
-
-                    <!-- E-mail -->
-                    <div class="form-group position-relative">
-                        <label for="formEmail" class="d-block">
-                            <i class="icon" data-feather="mail"></i>
-                        </label>
-                        <input type="email" id="formEmail" class="form-control form-control-lg thick mb-3" placeholder="E-mail">
+                    <span></span>
+                    <h3>Query</h3>
+                    <p>
+                        Query Section is designed to assist farmers in resolving their farming-related doubts and
+                        concerns. Through this interactive platform, farmers can seek expert advice, share experiences,
+                        and engage in discussions with fellow agricultural enthusiasts, fostering a supportive and
+                        knowledgeable community.</p>
+                </a>
+                <a href="/elearning" class="link-wrapper single-service">
+                    <div class="social">
+                        <i class="fa-solid fa-chalkboard"></i>
                     </div>
-
-                    <!-- Message -->
-                    <div class="form-group message">
-                        <textarea id="formMessage" class="form-control form-control-lg mb-3" rows="5" placeholder="Message"></textarea>
-                    </div>
-
-                    <!-- Submit btn -->
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary" tabIndex="-1">Send message</button>
-                    </div>
-
-                    <input type="hidden" name="_subject" value="New submission!">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
+                    <span></span>
+                    <h3>E-Learning</h3>
+                    <p>
+                        Here we provides a collection of farming-related videos, providing farmers with valuable
+                        insights into various agricultural techniques and the latest government-run schemes. Farmers can
+                        enhance their skills, stay up-to-date with industry trends, and optimize their farming
+                        practices.</p>
+                </a>
             </div>
         </div>
     </div>
-</div>
+    <!-- ---Our Services--- -->
 
-<!-- ----- Contact Us ----- -->
 
-<%- include('footer'); -%>
+    <!-- ----- Contact Us ----- -->
+    <div class="content">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+
+
+                            <p><img src="images/Farmer1.jpg" alt="Image" class="img-fluid"></p>
+
+
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="heading mb-3 mt-4">GET IN TOUCH WITH US!</h3>
+                            <div class="line1">
+                            </div>
+                            <form class="mb-5" action="https://formspree.io/f/meqbozya"
+                            method="POST" id="contactForm" name="contactForm">
+                                <div class="row">
+                                    <div class="col-md-12 form-group mb-3">
+                                        <input type="text" class="form-control" name="name" id="name"
+                                            placeholder="Your name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group mb-3">
+                                        <input type="text" class="form-control" name="email" id="email"
+                                            placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group mb-3">
+                                        <input type="text" class="form-control" name="subject" id="subject"
+                                            placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group mb-3">
+                                        <textarea class="form-control" name="message" id="message" cols="30" rows="7"
+                                            placeholder="Write your message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="submit" value="Send Message"
+                                            class="btn btn-primary rounded-5 px-4">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ----- Contact Us ----- -->
+
+    <%- include('footer'); -%>

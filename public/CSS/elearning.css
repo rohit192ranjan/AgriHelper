@@ -46,15 +46,7 @@ a:hover{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    margin-top: 30px;
-}
-footer {
-    clear: both;
-    background-color: #45630a;
-    color: #fff;
-    text-align: center;
-    margin-top: 900px;
-    padding: 1.5% 0 1% 0;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 600px){
