@@ -22,7 +22,7 @@ input, textarea, select {
 
 input:focus,
 textarea:focus {
-  background-color: rgb(237, 228, 255);
+  background-color: #eff4e5;
 }
 
 input, textarea {
@@ -31,4 +31,5 @@ input, textarea {
 
 .form-control {
   margin: 0.5rem 0;
+  border: none;
 }

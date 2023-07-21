@@ -3,25 +3,16 @@ body {
     margin: 0;
     background-color: #fff;
 }
-.navbar {
-    background: linear-gradient(to right, #45630a, #a0e418);
-}
-.nav-link:hover {
-    color: #e5f9bd !important;
-}
-.nav-item {
-    padding: 0 10px;
-    color: #525050;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
 
 .body{
     color: #525050;
     width: 90%;
-    height: 450px;
+    height: 900px;
     margin: auto;
     padding: 10px 0;
+}
+.options {
+    margin-bottom: 30px;
 }
 .op-item{
     display: inline-block;
