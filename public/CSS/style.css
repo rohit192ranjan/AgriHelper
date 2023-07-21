@@ -164,7 +164,7 @@ footer {
 }
 
 .firstrowservice{
-    height: 330px;
+    height: 340px;
 }
 
 .line {
@@ -242,7 +242,7 @@ footer {
 
 @media only screen and (max-width: 1000px) {
     .wrapper {
-        height: 125rem;
+        height: 130rem;
     }
 
     .sec1 {
@@ -252,17 +252,29 @@ footer {
     .secrowcard {
         margin: 0 0;
     }
+    .firstrowservice{
+        height: 350px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+    .wrapper {
+        height: 135rem;
+    }
     .sec1 {
-        height: 120vh;
+        height: 110vh;
+    }
+    .firstrowservice{
+        height: 360px;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .sec1 {
         height: 100vh;
+    }
+    .firstrowservice{
+        height: 360px;
     }
 }
 
