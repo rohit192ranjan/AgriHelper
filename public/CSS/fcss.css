@@ -113,7 +113,13 @@
 {
   .site-footer
   {
-    padding-bottom:0
+    padding: 0 12px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .site-footer p
+  {
+    padding-right: 0;
   }
   .site-footer .copyright-text,.site-footer .social-icons
   {
